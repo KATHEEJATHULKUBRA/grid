@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T SHIRT SHOP</title>
+    <link rel="website icon" href="/favicon (3).ico">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<style>
+    @media only screen and (max-width:500px) {
+
+        .card {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .cardsec h1{
+            font-size: 34px ;
+        }
+        .list {
+            grid-template-columns: repeat(1, auto);
+            height: fit-content;
+            padding: 20px;
+        }
+    }
+
+    @media only screen and (min-width:501px) and (max-width:780px) {
+        .card {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .cardsec h1{
+            font-size: 34px ;
+        }
+        .list {
+            grid-template-columns: repeat(3, auto);
+            height: fit-content;
+            padding: 20px;
+        }
+
+    }
+
+
+
+    @media only screen and (max-width:780px) {
+
+        .nav1 {
+            display: block;
+
+            top: 30px;
+
+            position: relative;
+            z-index: 99;
+
+        }
+        .side{
+            grid-template-columns: repeat(1,1fr);
+         }
+
+        .sec2 {
+            margin-top: 50px;
+        }
+
+
+        .hamburger-icon {
+            display: block;
+            font-size: 24px;
+        }
+
+
+        .fa-x {
+            display: none;
+        }
+
+        .sale {
+            display: none;
+        }
+
+        .nav1:has(.hamburger-icon input[type="checkbox"]) .fa-x {
+            display: none;
+        }
+
+        .nav1:has(.hamburger-icon input[type="checkbox"]:checked) .menu .ul1 {
+
+            height: 400px;
+        }
+
+        .nav1:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
+            display: none;
+        }
+
+        .nav1:has(.hamburger-icon input[type="checkbox"]:checked) .fa-x {
+            display: inline-block;
+
+        }
+
+        .menu .ul1 {
+            height: 0px;
+            overflow: hidden;
+
+            grid-template-columns: repeat(1, 300px);
+            justify-content: center;
+            transition: all 0.5s ease-in-out;
+
+            width: auto;
+        }
+
+        .first,
+        .nxt {
+            grid-template-columns: auto;
+        }
+
+    }
+
+
+    @media only screen and (min-width:780px) and (max-width: 900px) {
+
+        .card {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .side{
+            grid-template-columns: repeat(1,1fr);
+         }
+         .sidecontain {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .contain1{
+         margin-top: -73px;
+        }
+        .contain3{
+         margin-top: 28px;
+        }
+
+        .first,
+        .nxt {
+            grid-template-columns: auto;
+        }
+    }
+
+    @media only screen and (min-width:900px) and (max-width: 1200px) {
+       
+        .card {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+</style>
+
+<body>
+    <div class="sale" style="text-align: center; background-color: black; color: antiquewhite;padding: 10px;">
+        <p> Sale is on! 25% off sitewide using TEES25 at checkout </p>
+    </div>
+    <nav class="nav1">
+        <div class="menu">
+
+            <button class="hamburger-icon">
+                <label for="dropdown">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-x"></i>
+                </label>
+                <input type="checkbox" id="dropdown" />
+            </button>
+            <ul class="ul1">
+                <li id="na1" style="background-color:rgb(51, 8, 8); color: white; font-weight: bolder;"><a
+                        href="/index.html" style="text-decoration: none; color: white;">T SHOP</a></li>
+                <li id="na"><a href="/new.html"  class="nav-link ">New</a></li>
+                <li id="na2"><a href="/men.html"  class="nav-link active">Women & men</a></li>
+                <li id="na3"><a href="/contact.html"  class="nav-link ">contact</a></li>
+                <li>
+                    <div class="profile"> <i class="fa-solid fa-user"> </i>
+                        <p>log in</p>
+                        <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- nav end -->
+    <!-- side nav -->
+    <section class="side">
+       
+        <!-- card -->
+        <div class="sec2">
+            <div class="cardsec" style="text-align: center; margin-top: 30px;">
+                <h1 >MEN & WOMEN</h1>
+            </div>
+            <div class="card">
+                <div id="card1"><img src="/wo4.webp" alt="">
+                    <h5>T SHIRT</h5>
+                    <p>$15.00</p>
+                </div>
+                <div id="card2"><img src="/wo3.webp" alt="">
+                    <h5>T SHIRT</h5>
+                    <p>$15.00</p>
+                </div>
+                <div id="card3"><img src="/wo2.webp" alt="">
+                    <h5>T SHIRT</h5>
+                    <p>$15.00</p>
+                </div>
+                <div id="card4"><img src="/wo1.webp" alt="">
+                    <h5>T SHIRT</h5>
+                    <p>$15.00</p>
+                </div>
+                <div id="card5"><img src="/me4.webp" alt="">
+                    <h5>T SHIRT</h5>
+                    <p>$15.00</p>
+                </div>
+                <div id="card6"><img src="/me3.webp" alt="">
+                    <h5>T SHIRT</h5>
+                    <p>$15.00</p>
+                </div>
+                <div id="card7"><img src="/me2.webp" alt="">
+                    <h5>T SHIRT</h5>
+                    <p>$15.00</p>
+                </div>
+                <div id="card8"><img src="/me1.webp" alt="">
+                    <h5>T SHIRT</h5>
+                    <p>$15.00</p>
+                </div>
+
+            </div>
+            <div class="btn" style="text-align: center;">
+                <input type="button" value="shop now" class="shop">
+            </div>
+        </div>
+         <div class="sidecontain">
+            <div class="contain1">
+                <a href="/index.html">Home</a>
+                <p>></p>
+                <a href="/men.html">Women&men</a>
+            </div>
+            <div class="contain2">
+                <h4>Browse by</h4>
+                <div class="bb"></div>
+                <ul>
+                    <li><a href="/index.html">All Products</a></li>
+                    <li><a href="/new.html">New</a></li>
+                    <li><a href="/men.html">Women&men</a></li>
+                </ul>
+
+            </div>
+            <div class="contain3">
+                <h4>Filter by</h4>
+                <div class="bb"></div>
+                <p>size</p>
+                <div class="check" id="check1">
+                    <input class="check"  type="checkbox" name="" id=""> <span>Large</span>
+                </div>
+                <div class="check" id="check2">
+                    <input class="check"   type="checkbox" name="" id=""> <span>Medium</span>
+                </div>
+                <div class="check"  id="check3">
+                    <input class="check"  type="checkbox" name="" id=""> <span>Small</span>
+                </div>
+               
+            </div>
+        </div>
+        <!-- side-nav-end -->
+    </section>
+    <!-- card end -->
+
+    <!-- footer -->
+    <footer>
+        <div class="first">
+            <div class="footit">
+                <div class="footitem">
+                    <h3> T SHOP</h3>
+                    <p>info@mysite.com</p>
+                    <p> Tel: 123-456-7890</p>
+                </div>
+
+            </div>
+            <div class="list">
+                <div class="li">
+                    <h5 style="font-size: 22px;"> Shop</h5>
+                    <ul style="list-style: none;">
+                        <li>New</li>
+                        <li>Women</li>
+                        <li>Men</li>
+                    </ul>
+                </div>
+                <div class="li">
+                    <h5 style="font-size: 22px;">Our Store</h5>
+                    <ul style="list-style: none;">
+                        <li>About us</li>
+                        <li>Subscribe</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                <div class="li">
+                    <h5 style="font-size: 22px;">Terms & Conditions</h5>
+                    <ul style="list-style: none;">
+                        <li>Store Policy</li>
+                        <li>Shipping & Return</li>
+                        <li>Payment Methods</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nxt">
+            <div class="socialicon">
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-tiktok'></i>
+                <i class='bx bxl-meta'></i>
+                <i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-twitter'></i>
+            </div>
+            <div class="contentp">
+                <p>
+                    © 2035 by T Shop. Powered and secured by Wix</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
